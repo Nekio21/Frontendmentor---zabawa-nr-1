@@ -33,6 +33,11 @@ html, body{
 	overflow:hidden;
 }
 
+.contener__card__half--img{
+	background-image: url("../images/image-product-desktop.jpg");
+	background-size:cover;
+}
+
 .contener__card__half--padding{
 	padding: 2em;
 }
@@ -57,7 +62,7 @@ html, body{
 
 .naglowek header{
 	font-family: 'Fraunces', serif;
-	margin-top: 1em;
+	margin-top: 0.5em;
 	font-size: 2rem;
 }
 
@@ -111,4 +116,37 @@ html, body{
 
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+.prosty--flexik{
+	display:flex;
+	flex-direction:column;
+	gap:1em;
+	height:100%;
+}
+
+@media screen and (max-width: 475px){
+	
+	.contener__card{
+		width: 90%;
+		min-width: 0px;
+		height: auto;
+		background-color: hsl(0, 0%, 100%);
+		display:flex;
+		flex-direction: column;
+	}	
+	
+	.prosty--flexik{
+		margin-bottom: 5em;
+	}
+	
+	.contener__card__half{
+			width:100%;
+			min-height:250px;
+	}
+	
+	.contener__card__half--img{
+		background-image: url("../images/image-product-mobile.jpg");
+		background-size:cover;
+	}
 }
