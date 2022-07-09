@@ -1,0 +1,114 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body{
+	background: hsl(30, 38%, 92%);
+	margin: 0px;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
+.contener{
+	width: 100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contener__card{
+	width: 37%;
+	min-width: 450px;
+	height: 400px;
+	background-color: hsl(0, 0%, 100%);
+	display:flex;
+}
+
+.contener__card__half{
+	width: 50%;
+	overflow:hidden;
+}
+
+.contener__card__half--padding{
+	padding: 2em;
+}
+
+.contener__card__half--flex{
+	display: flex;
+	height:100%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contener__card__half img{
+	width:100%;
+	height: 100%;
+	object-fit:cover;
+}
+
+.contener__card__half p{
+	color: hsl(228, 12%, 48%);
+	font-size: 0.8rem;
+}
+
+.naglowek header{
+	font-family: 'Fraunces', serif;
+	margin-top: 1em;
+	font-size: 2rem;
+}
+
+.naglowek p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	color:hsl(228, 12%, 48%);
+}
+
+.cena{
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.cena__aktualna{
+	font-family: 'Fraunces', serif;
+	color: hsl(158, 36%, 37%);
+	font-size: 2rem;
+}
+
+.przycisk{
+	width:100%;
+	margin-top: 1em;
+	border-radius: 2em;
+	font-size: 1rem;
+	background-color: hsl(158, 36%, 37%);
+	color: hsl(0, 0%, 100%);
+	display:flex;
+	justify-content:center;
+	gap: 1em;
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+.przycisk img{
+	width: 1em;
+	height: 1em;
+	object-fit: cover;
+}
+
+.przycisk span{
+	font-weight: 700;
+}
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
